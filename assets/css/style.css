@@ -1,0 +1,685 @@
+:root {
+  --primary-color: #0777fa;
+  --secondary-color: ;
+  --failed-color: #ec2b26;
+
+  --sidebar-background-color: #131f36;
+  --sidebar-default-color: #bdbdbe;
+  --sidebar-icon-color: #70718c;
+  --sidebar-active-color: #fbc257;
+  --sidebar-hover-color: #fafffe;
+
+  --main-background-color: #cbd1d68a;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+html,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+/*  ======>>>>>>  Common  <<<<<<<======  */
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-x-left-y-center {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.flex-no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-color-light {
+  color: #96a4b0;
+}
+
+.coin-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.logo-wrap {
+  width: 48px;
+  background-color: lavenderblush;
+  border-radius: 50%;
+}
+
+.diamon-logo {
+  width: 40px;
+  object-fit: cover;
+}
+
+.link-remove-default {
+  text-decoration: none;
+}
+
+.moving-tab {
+  display: inline-block;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 34px;
+  box-shadow: 0 5px 4px 1px #ccc6;
+}
+
+.moving-tab-btn {
+  display: inline-block;
+  padding: 16px 62px;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  color: #9c9c9c;
+  font-size: 14px;
+}
+
+.moving-tab-btn.active {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.edit-token-btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #4d4f54;
+}
+
+.edit-token-btn:hover {
+  background-color: #dae0e5;
+}
+
+.token-info-btn {
+  padding: 2px 3px;
+  border-radius: 3px;
+  color: #6f7d8a;
+  font-weight: 600;
+  text-align: center;
+}
+
+.token-info-btn:hover {
+  background-color: #dae0e5;
+  color: #535d67;
+  cursor: pointer;
+}
+
+.sidebar-icon {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.social-icon {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+}
+
+.f-10 {
+  font-size: 10px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-32 {
+  font-size: 32px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.my-auto {
+  margin: auto 0;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.py-32 {
+  padding: 32px 0;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.r-16 {
+  right: 16px;
+}
+
+.fl-right {
+  float: right;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.token-image {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.token-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.live-status {
+  padding: 0 16px;
+  color: #ff3465;
+  background-color: #ff34632f;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.status {
+  padding: 0 8px;
+  color: #fffceb;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.status-success {
+  background-color: var(--primary-color);
+}
+
+.status-failed {
+  background-color: var(--failed-color);
+}
+
+.trade-btn {
+  text-align: center;
+  border-radius: 3px;
+  padding: 4px 14px;
+}
+
+.trade-btn:hover {
+  color: #fffceb;
+  transition: all linear 0.3s;
+}
+
+.claim {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.claim:hover {
+  background-color: var(--primary-color);
+}
+
+.complete {
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px 14px;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.complete-success {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.complete-failed {
+  border: 2px solid var(--failed-color);
+  color: var(--failed-color);
+}
+
+.refund {
+  color: var(--failed-color);
+  border: 2px solid var(--failed-color);
+}
+
+.refund:hover {
+  background-color: var(--failed-color);
+}
+
+/*  ======>>>>>>  Main  <<<<<<<======  */
+
+/*  ======>>>>>>  Side Bar  <<<<<<<======  */
+
+.main-logo {
+  width: 260px;
+  position: fixed;
+  background-color: var(--sidebar-background-color);
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.main-logo:after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  background-color: #9293a8;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-logo a {
+  font-size: 25px;
+  padding: 15px 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-logo h1 {
+  margin-left: 10px;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--sidebar-background-color);
+  position: fixed;
+  margin-top: 69px;
+}
+
+.sidebar .sidebar-content {
+  background-color: var(--sidebar-background-color);
+  height: calc(100vh - 69px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 0 50px 16px;
+}
+
+.sidebar .sidebar-content i {
+  color: var(--sidebar-icon-color);
+  opacity: 0.7;
+}
+
+.sidebar .sidebar-content p,
+.sidebar .sidebar-content span {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.sidebar .sidebar-content ul a {
+  margin: 12px 0;
+  padding: 10px 10px;
+}
+
+.sidebar .sidebar-content li:hover a > p,
+.sidebar .sidebar-content li:hover a > i {
+  opacity: 1;
+  transition: opacity ease 0.3s;
+}
+
+.sidebar .primary-content .side-bar-option:hover > span {
+  opacity: 1;
+  transition: opacity ease 0.3s;
+}
+
+.sidebar-content .primary-content {
+  display: inline-block;
+}
+
+.sidebar-content .primary-content:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 85%;
+  background-color: #9293a8;
+}
+
+.sidebar .primary-content .asset-link {
+  width: 250px;
+}
+
+.sidebar-content .primary-content a:first-of-type > p {
+  width: 100%;
+}
+
+.sidebar-content .secondary-content {
+  margin-bottom: 100px;
+}
+
+.sidebar-content .secondary-content > p {
+  margin-top: 34px;
+  margin-bottom: 20px;
+  color: #fff;
+  opacity: 1;
+}
+
+.sidebar-social {
+  position: fixed;
+  width: 280px;
+  height: 50px;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-social a {
+  color: var(--sidebar-icon-color);
+  font-size: 24px;
+}
+
+.sidebar-social a:hover {
+  transition: color 0.3s ease;
+  color: var(--sidebar-active-color);
+}
+
+/*  ======>>>>>>  Main Page  <<<<<<<======  */
+.mainpage {
+  margin-left: 260px;
+  background-color: var(--main-background-color);
+}
+
+.mainpage .header {
+  padding: 10px 16px;
+  flex-direction: row nowrap;
+  height: 80px;
+}
+
+.mainpage .header:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--sidebar-default-color);
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.mainpage .header .breadcrumb-icon {
+  font-size: 40px;
+  padding: 0 10px;
+}
+
+.mainpage .header .breadcrumb-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header .breadcrumb {
+  color: var(--sidebar-background-color);
+}
+
+.header .breadcrumb a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header .exchange > a {
+  padding: 14px 26px;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+
+.header .exchange .swap-btn {
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.header .exchange .swap-btn:hover {
+  background-color: #3cd2fa;
+  transition: background-color linear 0.2s;
+}
+
+.header .exchange .exchange-logo:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s linear;
+}
+
+.header .exchange .exchange-btn {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.header .exchange .exchange-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: all linear 0.2s;
+}
+
+.header .exchange .wallet-info {
+  border-radius: 100px;
+}
+
+.exchange .wallet-info .wallet-address {
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+}
+
+.content .token-title {
+  margin: 40px 0 20px 20px;
+  padding: 20px 20px 0;
+}
+
+.content .token-title .token-description {
+  /* height: 120px; */
+  margin: auto 20px;
+}
+
+.content .token-description .token-contract {
+  color: #4d4f54;
+}
+
+.token-contract .copy-icon {
+  color: #4d4f54;
+}
+
+.token-content .token-sale-title {
+  padding: 70px 30px 16px;
+  line-height: 28px;
+  color: #2c2c2c;
+}
+
+.token-content .token-sale-title h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.token-content .token-sale-title p {
+  font-size: 14px;
+}
+
+.token-content .token-sale-table {
+  max-width: 100%;
+  background-color: white;
+  margin: 20px 30px;
+  padding: 64px 48px;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 3px #eee;
+}
+
+.token-content .token-sale-table table {
+  border-collapse: collapse;
+  color: #212529;
+  overflow-x: auto;
+}
+
+.token-content .token-sale-table table th {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: bold;
+  padding: 12px 7px 0;
+  line-height: 21px;
+  vertical-align: middle;
+}
+
+.token-content .token-sale-table table tbody > tr {
+  border-top: 1px solid #dee2e6;
+}
+
+.token-content .token-sale-table table td {
+  padding: 12px 7px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+.token-sale-table table .display-item {
+  width: 34px;
+}
+
+.token-sale-table table .display-number {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.token-sale-table table .display-unit {
+  font-size: 7.5px;
+  color: #d3d3d3;
+}
+
+.footer {
+  color: #2c2c2c;
+  background-color: var(--main-background-color);
+}
