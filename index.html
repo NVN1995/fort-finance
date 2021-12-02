@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diamond Wallet</title>
+    <title>Diamond Financial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -23,18 +23,18 @@
   </head>
   <body>
     <div class="main">
-      <div class="main-logo">
-        <a href="#" class="link-remove-default flex flex-x-left-y-center">
-          <img
-            src="./assets/image/diamon-main-logo.png"
-            alt="Diamon-Logo"
-            class="coin-logo"
-          />
-          <h1>Diamond</h1>
-        </a>
-      </div>
-      <div class="sidebar">
-        <div class="sidebar-content">
+      <div class="sidebar js-sidebar show-hide-transition">
+        <div class="main-logo js-main-logo show-hide-transition">
+          <a href="#" class="link-remove-default flex flex-x-left-y-center js-main-logo-img show-hide-transition">
+            <img
+              src="./assets/image/diamon-main-logo.png"
+              alt="Diamon-Logo"
+              class="coin-logo"
+            />
+            <h1 class="js-sidebar-hide sidebar-hover-block">Diamond</h1>
+          </a>
+        </div>
+        <div class="sidebar-content js-sidebar-content show-hide-transition">
           <ul class="primary-content">
             <li class="fort-asset mt-24">
               <ul>
@@ -55,36 +55,41 @@
                       class="coin-logo"
                     />
                   </div>
-                  <p class="ml-16 fw-600  ">
+                  <p class="ml-16 fw-600 sidebar-active js-sidebar-hide sidebar-hover-block">
                     Fort Financial
-                    <i class="fa-solid fa-caret-down absolute-center mr-16"></i>
+                    <i class="fa-solid fa-caret-down absolute-center mr-16 sidebar-active js-sidebar-hide sidebar-hover-block"></i>
                   </p>
                 </a>
-                <li>
-                  <a href="#" class="side-bar-option flex link-remove-default f-12">
-                    <span class="ml-8">MA</span>
-                    <span class="ml-24">My Asset</span>
+                <li class="primary-item">
+                  <a href="#" class="flex link-remove-default f-12">
+                    <p class="ml-8 sidebar-active">
+                      <span class="sidebar-active">MA</span>
+                      <span class="ml-16 sidebar-active js-sidebar-hide sidebar-hover-iblock">
+                        My Asset</span>
+                    </p>
                   </a>
                 </li>
-                <li>
-                  <a href="#" class="side-bar-option flex link-remove-default f-12">
-                    <span class="ml-8">MN</span>
-                    <span class="ml-24">My NTFs</span>
+                <li class="primary-item">
+                  <a href="#" class="flex link-remove-default f-12">
+                    <p class="ml-8">
+                      <span>MN</span>
+                      <span class="ml-16 js-sidebar-hide sidebar-hover-iblock">My NTFs</span> 
+                    </p>
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
           <ul class="secondary-content">
-            <p class="f-16 fw-600 pl-10">for Investor</p>
+            <p class="f-16 fw-600 pl-10 js-sidebar-hide">for Investor</p>
             <li>
               <a
                 href="#"
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-hand-holding-heart sidebar-icon"> </i>
-                <p class="f-14 uppercase fw-600">
-                  Vote
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
+                  Invest
                   <i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
               </a>
@@ -95,8 +100,8 @@
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-hand-holding-dollar sidebar-icon"> </i>
-                <p class="f-14 uppercase fw-600">
-                  Invest <i class="fa-solid fa-caret-down absolute-center"></i>
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
+                  NTF Market<i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
               </a>
             </li>
@@ -106,20 +111,20 @@
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-cart-arrow-down sidebar-icon"></i>
-                <p class="f-14 uppercase fw-600">
-                  NTF Market
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
+                  Vote
                   <i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
               </a>
             </li>
-            <p class="f-16 fw-600 pl-10">for Project</p>
+            <p class="f-16 fw-600 pl-10 js-sidebar-hide">for Project</p>
             <li>
               <a
                 href="#"
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-rocket sidebar-icon"></i>
-                <p class="f-14 uppercase fw-600">
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
                   Project Panel
                   <i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
@@ -131,7 +136,7 @@
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-book-open-reader sidebar-icon"></i>
-                <p class="f-14 uppercase fw-600">
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
                   Documents
                   <i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
@@ -143,7 +148,7 @@
                 class=" flex link-remove-default relative flex-x-left-y-center"
               >
                 <i class="fa-solid fa-wrench sidebar-icon"></i>
-                <p class="f-14 uppercase fw-600">
+                <p class="f-12 uppercase fw-600 js-sidebar-hide sidebar-hover-block">
                   Admin panel
                   <i class="fa-solid fa-caret-down absolute-center"></i>
                 </p>
@@ -151,28 +156,28 @@
             </li>
           </ul>
         </div>
-        <div class="sidebar-social flex">
+        <div class="sidebar-social flex ml-8">
           <a href="#" class="link-remove-default">
             <i class="fa-brands fa-twitter social-icon"></i>
           </a>
           <a href="#" class="link-remove-default">
-            <i class="fa-brands fa-telegram social-icon"></i>
+            <i class="fa-brands fa-telegram social-icon js-sidebar-hide sidebar-hover-block"></i>
           </a>
           <a href="#" class="link-remove-default">
-            <i class="fa-solid fa-m social-icon"></i>
+            <i class="fa-solid fa-m social-icon js-sidebar-hide sidebar-hover-block"></i>
           </a>
           <a href="#" class="link-remove-default">
-            <i class="fa-brands fa-github social-icon"></i>
+            <i class="fa-brands fa-github social-icon js-sidebar-hide sidebar-hover-block"></i>
           </a>
           <a href="#" class="link-remove-default">
-            <i class="fa-brands fa-line social-icon"></i>
+            <i class="fa-brands fa-line social-icon js-sidebar-hide sidebar-hover-block"></i>
           </a>
         </div>
       </div>
-      <div class="mainpage">
+      <div class="mainpage js-mainpage show-hide-transition">
         <div class="header flex justify-space-between relative">
           <div class="breadcrumb flex align-item-center">
-            <i class="fa-solid fa-circle-chevron-left breadcrumb-icon"></i>
+            <i class="fa-solid fa-circle-chevron-left breadcrumb-icon js-breadcrumb-icon"></i>
             <a class="breadcrumb-desc f-20">NTF Market > Explore</a>
           </div>
           <div class="exchange flex align-item-center">
@@ -190,7 +195,7 @@
             </a>
           </div>
         </div>
-        <div class="content">
+        <div class="content js-mainpage-content">
           <div class="token-title flex">
             <div class="token-image">
               <img src="./assets/image/wolf-coin-icon.png" alt="Wolf-token" />
@@ -211,35 +216,103 @@
           </div>
           <div class="token-content">
             <div class="moving-tab">
-              <a class="moving-tab-btn link-remove-default active" href="#">My Tokens</a>
-              <a class="moving-tab-btn link-remove-default" href="#">My NTFs</a>
-              <a class="moving-tab-btn link-remove-default" href="#">Favorite</a>
+              <p class="moving-tab-btn js-main-moving-tab-btn active" >My Tokens</p>
+              <p class="moving-tab-btn js-main-moving-tab-btn " >My NFTs</p>
+              <p class="moving-tab-btn js-main-moving-tab-btn " >Favorite</p>
             </div>
-            <div class="token-sale-title">
-              <h3>Participated Token Sale</h3>
-              <p>List of tokens by participating in token sales</p>
-            </div>
-            <div class="token-sale-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th class="text-left">Project Name</th>
-                    <th class="text-left">Token Name</th>
-                    <th class="">Tokens you get</th>
-                    <th class="">Amount paid</th>
-                    <th class="">Status</th>
-                    <th class="">Claim Tokens	</th>
-                    <th class="">Listing</th>
+            <div class="my-token js-main-content-item">
+              <div class="token-sale-title">
+                <h3>Participated Token Sale</h3>
+                <p>List of tokens by participating in token sales</p>
+              </div>
+              <div class="token-sale-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-left">Project Name</th>
+                      <th class="text-left">Token Name</th>
+                      <th class="">Tokens you get</th>
+                      <th class="">Amount paid</th>
+                      <th class="">Status</th>
+                      <th class="">Claim Tokens	</th>
+                      <th class="">Listing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="f-14">
+                        <span class="block">
+                          Fort Financial Project
+                        </span>
+                        <span class="token-info-btn f-10 text-left">
+                          Sale info
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </span>
+                      </td>
+                      <td class="f-14">
+                        FORT / Fort token
+                        <span class="f-10 block">0xa1a3...24abeb</span>
+                        <span class="token-info-btn f-10">
+                        Etherscan
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14" >32,500 FORT</td>
+                    <td class="f-14 text-color-light">0.854112 ETH</td>
+                    <td>
+                      <span class="live-status uppercase">
+                        <i class="fa-solid fa-signal mr-4"></i>
+                         live
+                      </span>
+                    </td>
+                    <td class="">
+                      <span class="time-display-wrapper flex">
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Day</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Hour</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Min</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Sec</span>
+                        </span>
+                      </span>
+                    </td>
+                    <td class="">
+                      <span class="time-display-wrapper flex">
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Day</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Hour</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Min</span>
+                        </span>
+                        <span class="display-item">
+                          <span class="display-number block text-center">00</span>
+                          <span class="display-unit block text-center">Sec</span>
+                        </span>
+                      </span>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
                   <tr>
                     <td class="f-14">
                       <span class="block">
                         Fort Financial Project
                       </span>
-                      <span class="token-info-btn f-10 text-left">
-                        Sale info 
+                      <span class="token-info-btn f-10">
+                        Sale info
                         <i class="fa-solid fa-pen-to-square"></i>
                       </span>
                     </td>
@@ -247,219 +320,421 @@
                       FORT / Fort token
                       <span class="f-10 block">0xa1a3...24abeb</span>
                       <span class="token-info-btn f-10">
-                      Etherscan
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14" >32,500 FORT</td>
-                  <td class="f-14 text-color-light">0.854112 ETH</td>
-                  <td>
-                    <span class="live-status uppercase">
-                      <i class="fa-solid fa-signal mr-4"></i>
-                       live
-                    </span>
-                  </td>
-                  <td class="">
-                    <span class="time-display-wrapper flex">
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Day</span>
+                        Etherscan
+                        <i class="fa-solid fa-pen-to-square"></i>
                       </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Hour</span>
-                      </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Min</span>
-                      </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Sec</span>
-                      </span>
-                    </span>
-                  </td>
-                  <td class="">
-                    <span class="time-display-wrapper flex">
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Day</span>
-                      </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Hour</span>
-                      </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Min</span>
-                      </span>
-                      <span class="display-item">
-                        <span class="display-number block text-center">00</span>
-                        <span class="display-unit block text-center">Sec</span>
-                      </span>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="f-14">
-                    <span class="block">
-                      Fort Financial Project
-                    </span>
-                    <span class="token-info-btn f-10">
-                      Sale info 
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">
-                    FORT / Fort token
-                    <span class="f-10 block">0xa1a3...24abeb</span>
-                    <span class="token-info-btn f-10">
-                      Etherscan
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">32,500 FORT</td>
-                  <td class="f-14 text-color-light">31.25 USDT</td>
-                  <td>
-                    <span class="status status-success uppercase">
-                      <i class="fa-solid fa-check mr-4"></i>
-                      success
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="claim link-remove-default trade-btn block f-12"> 
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                        Claim
-                      </a>
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="link-remove-default f-12 block trade-btn claim"> 
-                        Trade Uniswap
-                        <i class="fa-solid fa-pen-to-square block"> </i>
-                      </a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="f-14">
-                    <span class="block">
-                      Fort Financial Project
-                    </span>
-                    <span class="token-info-btn f-10">
-                      Sale info 
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">
-                    FORT / Fort token
-                    <span class="f-10 block">0xa1a3...24abeb</span>
-                    <span class="token-info-btn f-10">
-                      Etherscan
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">32,500 FORT</td>
-                  <td class="f-14 text-color-light">31.25 USDT</td>
-                  <td>
-                    <span class="status status-success uppercase">
-                      <i class="fa-solid fa-check mr-4"></i>
-                      success
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="link-remove-default block f-12 complete complete-success"> 
+                    </td>
+                    <td class="f-14">32,500 FORT</td>
+                    <td class="f-14 text-color-light">31.25 USDT</td>
+                    <td>
+                      <span class="status status-success uppercase">
                         <i class="fa-solid fa-check mr-4"></i>
-                        Complete
-                      </a>
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="link-remove-default f-12 block trade-btn claim"> 
-                        Trade Uniswap
-                        <i class="fa-solid fa-pen-to-square block"></i>
-                      </a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="f-14">
-                    <span class="block">
-                      Fort Financial Project
-                    </span>
-                    <span class="token-info-btn f-10">
-                      Sale info 
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">
-                    FORT / Fort token
-                    <span class="f-10 block">0xa1a3...24abeb</span>
-                    <span class="token-info-btn f-10">
-                      Etherscan
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">1,054,500 FORT</td>
-                  <td class="f-14 text-color-light">10.00 BNB	</td>
-                  <td>
-                    <span class="status status-failed uppercase">
-                      <i class="fa-solid fa-xmark mr-4"></i>
-                      failed
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="refund link-remove-default trade-btn block f-12"> 
-                        Refund
-                      </a>
-                    </span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="f-14">
-                    <span class="block">
-                      Fort Financial Project
-                    </span>
-                    <span class="token-info-btn f-10">
-                      Sale info 
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">
-                    FORT / Fort token
-                    <span class="f-10 block">0xa1a3...24abeb</span>
-                    <span class="token-info-btn f-10">
-                      Etherscan
-                      <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                  </td>
-                  <td class="f-14">1,054,500 FORT</td>
-                  <td class="f-14 text-color-light">10.00 BNB	</td>
-                  <td>
-                    <span class="status status-failed uppercase">
-                      <i class="fa-solid fa-xmark mr-4"></i>
-                      failed
-                    </span>
-                  </td>
-                  <td>
-                    <span>
-                      <a href="#" class="link-remove-default block f-12 complete complete-failed"> 
+                        success
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="claim link-remove-default trade-btn block f-12">
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                          Claim
+                        </a>
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="link-remove-default f-12 block trade-btn claim">
+                          Trade Uniswap
+                          <i class="fa-solid fa-pen-to-square block"> </i>
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="f-14">
+                      <span class="block">
+                        Fort Financial Project
+                      </span>
+                      <span class="token-info-btn f-10">
+                        Sale info
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">
+                      FORT / Fort token
+                      <span class="f-10 block">0xa1a3...24abeb</span>
+                      <span class="token-info-btn f-10">
+                        Etherscan
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">32,500 FORT</td>
+                    <td class="f-14 text-color-light">31.25 USDT</td>
+                    <td>
+                      <span class="status status-success uppercase">
+                        <i class="fa-solid fa-check mr-4"></i>
+                        success
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="link-remove-default block f-12 complete complete-success">
+                          <i class="fa-solid fa-check mr-4"></i>
+                          Complete
+                        </a>
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="link-remove-default f-12 block trade-btn claim">
+                          Trade Uniswap
+                          <i class="fa-solid fa-pen-to-square block"></i>
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="f-14">
+                      <span class="block">
+                        Fort Financial Project
+                      </span>
+                      <span class="token-info-btn f-10">
+                        Sale info
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">
+                      FORT / Fort token
+                      <span class="f-10 block">0xa1a3...24abeb</span>
+                      <span class="token-info-btn f-10">
+                        Etherscan
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">1,054,500 FORT</td>
+                    <td class="f-14 text-color-light">10.00 BNB	</td>
+                    <td>
+                      <span class="status status-failed uppercase">
                         <i class="fa-solid fa-xmark mr-4"></i>
-                        Complete
-                      </a>
+                        failed
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="refund link-remove-default trade-btn block f-12">
+                          Refund
+                        </a>
+                      </span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="f-14">
+                      <span class="block">
+                        Fort Financial Project
+                      </span>
+                      <span class="token-info-btn f-10">
+                        Sale info
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">
+                      FORT / Fort token
+                      <span class="f-10 block">0xa1a3...24abeb</span>
+                      <span class="token-info-btn f-10">
+                        Etherscan
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      </span>
+                    </td>
+                    <td class="f-14">1,054,500 FORT</td>
+                    <td class="f-14 text-color-light">10.00 BNB	</td>
+                    <td>
+                      <span class="status status-failed uppercase">
+                        <i class="fa-solid fa-xmark mr-4"></i>
+                        failed
+                      </span>
+                    </td>
+                    <td>
+                      <span>
+                        <a href="#" class="link-remove-default block f-12 complete complete-failed">
+                          <i class="fa-solid fa-xmark mr-4"></i>
+                          Complete
+                        </a>
+                      </span>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="my-nft js-main-content-item js-nft-content relative hide">
+              <div class="nft-moving-tab">
+                <p class="nft-moving-tab-btn js-nft-moving-tab-btn active">My NFTs</p>
+                <p class="nft-moving-tab-btn js-nft-moving-tab-btn">Staked to NTF Farm</p>
+                <p class="nft-moving-tab-btn js-nft-moving-tab-btn">DAL Launch Pool</p>
+              </div>
+              <div class="nft-token nft-content-item js-nft-content-item">
+                <div class="nft-title">
+                  <h4>List of NFTs you own</h4>
+                  <p>The NFTs in your wallet, such as the NFTs harvested at NFT Farm</p>
+                </div>
+                <div class="sort-menu">
+                  <select>
+                    <option class="select-option" value="">Recently Received</option>
+                    <option class="select-option" value="">Recently Created</option>
+                    <option class="select-option" value="">Price: Low to High</option>
+                    <option class="select-option" value="">Price: High to Low</option>
+                    <option class="select-option" value="">Most Favorited</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down sort-icon"></i>
+                </div>
+                <div class="nft-token-list-container flex-wrap">
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/NFT-coin-img.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
                     </span>
-                  </td>
-                  <td></td>
-                </tr>
-              </tbody>
-              </table>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/USDC.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/USDC.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/USDC.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/USDC.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <img src="./assets/image/USDC.jpg" alt="NFT Token">
+                    <div class="nft-token-item-title">
+                      <span class="logo-nft-token">
+                        <img src="./assets/image/diamon-main-logo.png" alt="Diamon">
+                      </span>
+                      <span class="nft-token-name">Limited Coin NTF</span>
+                    </div>
+                    <div class="row nft-item-balance">
+                      <div class="col col-two"></div>
+                      <div class="col col-two">
+                        <span class="f-10 text-center block mt-10">Balance</span>
+                        <span class="row text-center block mt-10">1</span>
+                      </div>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="nft-farm nft-content-item js-nft-content-item h-1000 hide">
+                <div class="nft-title">
+                  <h4>Staked to NFT Farm</h4>
+                  <p>When you stake a token, points will be saved in this Farm every day. This is reflected every 10 minutes. Once you have enough points, Harvest them for a special NFT</p>
+                </div>
+                <div class="sort-menu">
+                  <select>
+                    <option class="select-option" value="">Recently Received</option>
+                    <option class="select-option" value="">Recently Created</option>
+                    <option class="select-option" value="">Price: Low to High</option>
+                    <option class="select-option" value="">Price: High to Low</option>
+                    <option class="select-option" value="">Most Favorited</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down sort-icon"></i>
+                </div>
+                <div class="farm-token-container flex-wrap">
+                  <div class="nft-token-item relative">
+                    <div class="token-stake-desc">
+                      <div class="token-img">
+                        <img src="./assets/image/diamon-main-logo.png" alt="wolf">
+                      </div>
+                      <span class="block token-name f-20">Diamond</span>
+                      <span class="block token-contract f-12">0xa1a3...24abeb</span>
+                    </div>
+                    <div class="stake-info">
+                      <span class="block info-title mt-10 f-12">Stake Token
+                      </span>
+                      <p class="info-content">DMD / <span class="sub-content f-10">Diamond</span> </p>
+                      <span class="block info-title mt-10 f-12">Available Point
+                      </span>
+                      <p class="info-content">
+                        <i class="fa-solid fa-rotate processing-icon"></i>
+                        10,500 
+                        <span class="sub-content f-10">Point</span>
+                      </p>
+                      <span class="block info-title mt-10 f-12">Stake Amount
+                      </span>
+                      <p class="info-content">
+                        200 
+                        <span  class="sub-content f-10">FORT</span>
+                      </p>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <div class="token-stake-desc">
+                      <div class="token-img">
+                        <img src="./assets/image/USDC.jpg" alt="USDT">
+                      </div>
+                      <span class="block token-name f-20">USDT</span>
+                      <span class="block token-contract f-12">0xa1a3...24cdef</span>
+                    </div>
+                    <div class="stake-info">
+                      <span class="block info-title mt-10 f-12">Stake Token
+                      </span>
+                      <p class="info-content">USDT / <span class="sub-content f-10">Techical USD</span> </p>
+                      <span class="block info-title mt-10 f-12">Token Lock Period
+                      </span>
+                      <p class="info-content">
+                        Dec 15, 2022  
+                        <span class="sub-content f-10">Point</span>
+                      </p>
+                      <span class="block info-title mt-10 f-12">
+                        Stake Amount
+                      </span>
+                      <p class="info-content">
+                        <i class="fa-solid fa-lock"></i>
+                        200 
+                        <span  class="sub-content f-10">FORT</span>
+                      </p>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                  <div class="nft-token-item relative">
+                    <div class="token-stake-desc">
+                      <div class="token-img">
+                        <img src="./assets/image/BTC.jpg" alt="BTC">
+                      </div>
+                      <span class="block token-name f-20">Bitcoin</span>
+                      <span class="block token-contract f-12">0xa1a3...24abeb</span>
+                    </div>
+                    <div class="stake-info">
+                      <span class="block info-title mt-10 f-12">Stake Token
+                      </span>
+                      <p class="info-content">BTC / <span class="sub-content f-10">Bitcoin</span> </p>
+                      <span class="block info-title mt-10 f-12">Available Point
+                      </span>
+                      <p class="info-content">
+                        <i class="fa-solid fa-rotate processing-icon"></i>
+                        10,500 
+                        <span class="sub-content f-10">Point</span>
+                      </p>
+                      <span class="block info-title mt-10 f-12">Stake Amount
+                      </span>
+                      <p class="info-content">
+                        200 
+                        <span  class="sub-content f-10">FORT</span>
+                      </p>
+                    </div>
+                    <span class="nft-favorite-rate">
+                      <i class="fa-solid fa-heart favorite-rate-icon f-12 ml-8"></i>
+                      <span class="favorite-rate-number f-8">10</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="nft-pool nft-content-item js-nft-content-item h-1000 hide">
+                <div class="nft-title">
+                  <h4>DAL Launch Pool</h4>
+                  <p>
+                    If you have an NFT with the token airdrop right, apply for an airdrop from the following.
+                  </p>
+                </div>
+              </div>
+            </div>
+              <div class="favorite js-main-content-item h-1000  hide">
+              </div>
             </div>
           </div>
         </div>
@@ -471,5 +746,6 @@
         </div>
       </div>
     </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
