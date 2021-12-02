@@ -44,6 +44,10 @@ html,
   transition: all 0.3s ease;
 }
 
+.show-hide-text-animation {
+  animation: fadeIn linear 0.3s;
+}
+
 .block {
   display: block;
 }
@@ -678,6 +682,10 @@ html,
   font-size: 14px;
 }
 
+.main-content-item {
+  animation: fadeIn linear 0.3s;
+}
+
 /* -------------------- My Token - Table ------------------ */
 
 .token-content .token-sale-table {
@@ -774,7 +782,18 @@ html,
 }
 
 .nft-content-item {
-  transition: opacity 1s linear;
+  animation: fadeIn linear 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    /* transform: scale(0); */
+    opacity: 0;
+  }
+  to {
+    /* transform: scale(1); */
+    opacity: 1;
+  }
 }
 
 .nft-title {
