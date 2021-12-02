@@ -96,6 +96,17 @@ html,
   flex-wrap: wrap;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+}
+
 .text-center {
   text-align: center;
 }
@@ -189,17 +200,6 @@ html,
 .social-icon {
   margin-right: 20px;
   font-size: 30px;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute-center {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  transform: translateY(-50%);
 }
 
 .f-8 {
@@ -561,6 +561,8 @@ html,
   max-width: 100%;
 }
 
+/* -------------------- Header ------------------ */
+
 .mainpage .header {
   padding: 10px 16px;
   flex-direction: row nowrap;
@@ -641,7 +643,7 @@ html,
   padding: 5px 10px;
 }
 
-/*  ==============>>>>>>>>> My  Token   <<<<<<<<<<===========  */
+/* -------------------- Main Content ------------------ */
 
 .content .token-title {
   margin: 40px 0 20px 20px;
@@ -676,7 +678,7 @@ html,
   font-size: 14px;
 }
 
-/*  ==============>>>>>>>>>  Token Table  <<<<<<<<<<===========  */
+/* -------------------- My Token - Table ------------------ */
 
 .token-content .token-sale-table {
   max-width: 100%;
@@ -734,7 +736,7 @@ html,
   background-color: var(--main-background-color);
 }
 
-/*  ==============>>>>>>>>> My NTFs   <<<<<<<<<<===========  */
+/* -------------------- My NTFs ------------------ */
 
 .my-nft {
   margin: 64px 30px 0;
